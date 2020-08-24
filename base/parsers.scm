@@ -1,3 +1,9 @@
+(define-module (parsers)
+  #:export
+  (p/item p/satisfy p/char p/letter
+	  p/lower p/upper p/digit p/alphanum
+	  p/word p/string p/many p/bracket p/sepby p/int p/nat))
+
 (add-to-load-path (dirname (current-filename)))
 
 (use-modules (base))
