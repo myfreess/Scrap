@@ -76,6 +76,9 @@
 
 (define (p/many p)
   ;;Just a result collector
+  ;;p只能返回单个结果或失败
+  ;;没想到什么好办法
+  ;;又不想放弃性能
   (ParseC
    [inp] ->
    (let loop ([acc '()] [rest inp])
